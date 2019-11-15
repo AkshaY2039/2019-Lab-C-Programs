@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ARR_SIZE	2
+#define ARR_SIZE	10
 #define NAME_SIZE	50
 #define ADD_SIZE	100
 #define BASE_AC_NO	2034349800
@@ -106,7 +106,10 @@ void search_customer_data_by_contact (struct customer s[])
 void search_customer_data (struct customer s[])
 {
 	if (last == 0)
+	{
 		printf ("\t\t\t!!! No Customer Data Available To Search For !!!\n");
+		getchar ();
+	}
 	else
 	{
 		int param_choice;
@@ -124,10 +127,12 @@ void search_customer_data (struct customer s[])
 						print_customer_data (s[i]);
 					else
 						printf ("\t\t\t!!! Account Number doesn't exist !!!\n");
+					getchar ();
 					break;
 			case 3	: search_customer_data_by_addr (s);
 					break;
 			case 4	: search_customer_data_by_contact (s);
+					getchar ();
 					break;
 			default	: printf ("\t\t\t!!! Invalid Choice of Parameter !!!\n");
 		}
@@ -146,6 +151,8 @@ void delete_customer_data (struct customer s[])
 		int flag = search_customer_data_by_acno (s, account_num);
 		if (flag != -1)
 		{
+			printf ("\t\tDeleting the following Record\n");
+			print_customer_data (s[flag]);
 			for (int i = flag + 1; i < last; ++i)
 				copy_customer_data (s[i - 1], s[i]);
 			last--;
@@ -169,15 +176,16 @@ int main ()
 		switch (choice_op)
 		{
 			case 1	: insert_customer_data (ct);
+					getchar ();
 					break;
 			case 2	: search_customer_data (ct);
 					break;
 			case 3	: delete_customer_data (ct);
+					getchar ();
 					break;
 			default	: printf ("\t\t\t\t!!! INVALID CHOICE !!!");
 		}
 
-		getchar ();
 		printf ("\n\t\t\tTo continue, press 'y' or 'Y' (any other character to exit) : ");
 		scanf ("%c", &flag);
 	}
