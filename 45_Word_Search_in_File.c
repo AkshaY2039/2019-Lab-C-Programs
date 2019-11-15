@@ -6,13 +6,17 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main ()
+int main (int argc, char const *argv[])
 {
-	char file_name[100];
-	//file_name[100] = "input_45.txt";
+	if (argc != 3)
+	{
+		printf ("Parameters missing or Extra parameters!!!\n");
+		printf ("Usage : ./a.out <file_name> <word_to_search>\n");
+		exit (-1);
+	}
 
-	printf ("Enter the File Name : ");
-	scanf ("%s", file_name);
+	char file_name[100];
+	strcpy (file_name, argv[1]);
 
 	FILE *file = fopen (file_name, "r");
 	if (file == NULL)
@@ -24,8 +28,7 @@ int main ()
 	char string[100], word[100];
 	long word_pos = 0, count_word = 0, count_substr = 0;
 
-	printf ("Enter the Word to search in \"%s\" : ", file_name);
-	scanf ("%s", word);
+	strcpy (word, argv[2]);
 
 	while (!feof (file))
 	{
