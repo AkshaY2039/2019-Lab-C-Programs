@@ -30,7 +30,7 @@ int main ()
 	int i;
 	int decimal_num = 0;
 	int repeat = 1;
-	int current_digit, next_digit, prev_digit;
+	int current_digit, prev_digit, next_digit;
 	int polarity_change = 0;
 
 	for (i = 0; roman[i] != '\0'; i++)
