@@ -4,6 +4,11 @@
 */
 #include <stdio.h>
 
+char * tokenise ()
+{
+	
+}
+
 int main ()
 {
 	return 0;
