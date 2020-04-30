@@ -15,6 +15,7 @@ int main ()
 {
 	int N;
 
+	printf ("Which Fibonacci term do you wish to find? ");
 	scanf ("%d", &N);
 
 	printf ("%dth Fibonacci (starting from first number as 1) is %d\n", N, nth_fibonacci (N));

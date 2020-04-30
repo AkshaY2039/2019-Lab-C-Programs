@@ -9,6 +9,7 @@ int main ()
 	int matrix[100][100];
 	int row, column, flag = 0;
 
+	printf ("Enter Row Size and Column Size : ");
 	scanf ("%d %d", &row, &column);
 
 	if (row != column)
@@ -18,6 +19,7 @@ int main ()
 	}
 	else
 	{
+		printf ("Enter Matrix elements :\n");
 		for (int r = 0; r < row; r++)
 			for (int c = 0; c < column; c++)
 			{

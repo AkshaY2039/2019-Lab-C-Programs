@@ -9,7 +9,9 @@ int main ()
 	int matrix[100][100], transpose[100][100];
 	int row, column;
 
+	printf ("Enter Row Size and Column Size : ");
 	scanf ("%d %d", &row, &column);
+	printf ("Enter Initial Matrix elements :\n");
 	for (int r = 0; r < row; r++)
 		for (int c = 0; c < column; c++)
 		{
@@ -17,7 +19,7 @@ int main ()
 			transpose[c][r] = matrix[r][c];
 		}
 
-	printf ("Matrix :\n");
+	printf ("Initial Matrix :\n");
 	for (int r = 0; r < row; r++)
 	{
 		for (int c = 0; c < column; c++)
@@ -25,7 +27,7 @@ int main ()
 		printf ("\n");
 	}
 
-	printf ("Transpose :\n");
+	printf ("Transpose Matrix :\n");
 	for (int r = 0; r < column; r++)
 	{
 		for (int c = 0; c < row; c++)

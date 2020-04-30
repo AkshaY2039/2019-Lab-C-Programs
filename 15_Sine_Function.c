@@ -26,7 +26,7 @@ int main ()
 
 	printf ("Enter degree to find sine for : ");
 	scanf ("%f", &degree);
-	printf ("Enter limit to limit till : ");
+	printf ("Enter term to limit till : ");
 	scanf ("%d", &limit);
 
 	printf ("sine(%0.2f degree) = %0.60Lf\n", degree, sine (degree, limit));

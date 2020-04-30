@@ -21,6 +21,7 @@ int main ()
 {
 	int x, y;
 
+	printf ("Enter the two Integers to find GCD and LCM of : ");
 	scanf ("%d %d", &x, &y);
 
 	int HCF = GCD (x, y);

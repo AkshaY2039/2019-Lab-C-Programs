@@ -8,6 +8,7 @@ int main ()
 {
 	int quadrant_width;
 
+	printf ("Enter the Quadrant Width of Diamond for Pattern : ");
 	scanf ("%d", &quadrant_width);
 
 	for (int i = 0; i < quadrant_width; i++)

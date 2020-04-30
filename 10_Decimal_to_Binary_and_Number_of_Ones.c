@@ -9,18 +9,26 @@ int main ()
 	int dec_num, num_ones = 0;
 	long binary = 0, place = 1;
 
+	printf ("Enter an Positive Integer (in Decimal System) : ");
 	scanf ("%d", &dec_num);
 
-	int temp = dec_num;
-	while (temp)
+	if (dec_num > 0)
 	{
-		binary += ((temp % 2) * place);
-		num_ones += (temp % 2);
-		temp /= 2;
-		place *= 10;
-	}
+		int temp = dec_num;
+		while (temp)
+		{
+			binary += ((temp % 2) * place);
+			num_ones += (temp % 2);
+			temp /= 2;
+			place *= 10;
+		}
 
-	printf ("%d (Decimal) = %li (Binary) with %d Ones\n", dec_num, binary, num_ones);
+		printf ("%d (Decimal) = %li (Binary) with %d Ones\n", dec_num, binary, num_ones);
+	}
+	else
+	{
+		printf("The Input should be a Positive Integer as asked.");
+	}
 
 	return 0;
 }

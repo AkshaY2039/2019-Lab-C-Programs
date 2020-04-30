@@ -8,9 +8,11 @@ int main ()
 {
 	char str[100], sub_str[100];
 
+	printf ("Enter the string : ");
 	scanf ("%[^\n]s", str);
 
 	int i = 0, k = 0;
+	printf ("Strings ending with 'S' or 's' : \n");	
 	do {
 		if (str[i] == ' ' || str[i] == '.' || str[i] == ',' || str[i] == ':' || str[i] == ';' || str[i] == '\0')
 		{

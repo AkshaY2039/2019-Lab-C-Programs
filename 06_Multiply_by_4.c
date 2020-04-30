@@ -8,6 +8,7 @@ int main ()
 {
 	int number;
 
+	printf ("Enter an Integer : ");
 	scanf ("%d", &number);
 
 	printf ("%d*4 = %d\n", number, number << 2);

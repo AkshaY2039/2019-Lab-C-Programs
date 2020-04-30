@@ -8,7 +8,8 @@ int main ()
 {
 	int days;
 
-	scanf ("%d", &days);
+	printf ("Enter the Number of Days (Positive Integer) : ");
+	int check_input = scanf ("%d", &days);
 
 	if (days < 0)
 		printf ("Time Cannot be Negative\n");

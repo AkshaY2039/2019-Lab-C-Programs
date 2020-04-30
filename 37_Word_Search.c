@@ -8,19 +8,31 @@
 int main ()
 {
 	char str[100][100], word[100];
-	int size;
+	int size, flag = 0;
 
+	printf ("Enter the number of strings : ");
 	scanf ("%d", &size);
 	getchar ();
+	printf ("Enter the Strings :\n");
 	for (int i = 0; i < size; i++)
-		scanf ("%s", str[i]);
+		gets (str[i]);
+		// scanf ("%s", str[i]);
+	printf ("Enter the Word to search for : ");
 	scanf ("%s", word);
 
 	char (*ptr)[100] = str;
 	for (int i = 0; i < size; ++i)
 	{
-		if (strcasecmp (word, *(ptr + i)) == 0)
+		if (strcasestr (*(ptr + i), word))
+		{
+			flag ++;
 			printf ("\tMatched with string[%d] : %s\n", i, *(ptr + i));
+		}
+	}
+
+	if (!flag)
+	{
+		printf ("No occurences of '%s' word found in the strings.\n", word);
 	}
 
 	return 0;

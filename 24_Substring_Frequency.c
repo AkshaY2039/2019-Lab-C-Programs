@@ -9,8 +9,10 @@ int main ()
 	int count = 0, j;
 	char str[100], sub_str[100];
 
+	printf ("Enter the string : ");
 	scanf ("%[^\n]s", str);
 	getchar ();
+	printf ("Enter the sub-string to find : ");
 	scanf ("%[^\n]s", sub_str);
 
 	for (int i = 0; str[i] != '\0'; ++i)

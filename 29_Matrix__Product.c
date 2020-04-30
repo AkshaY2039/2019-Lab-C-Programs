@@ -9,14 +9,18 @@ int main ()
 	int matrixA[100][100], matrixB[100][100], product[100][100];
 	int row1, column1, row2, column2;
 
+	printf ("Enter Row Size and Column Size for Matrix A : ");
 	scanf ("%d %d", &row1, &column1);
+	printf ("Enter Row Size and Column Size for Matrix B : ");
 	scanf ("%d %d", &row2, &column2);
 
 	if (column1 == row2)
 	{
+		printf ("Enter Matrix A elements :\n");
 		for (int r = 0; r < row1; r++)
 			for (int c = 0; c < column1; c++)
 				scanf ("%d", &matrixA[r][c]);
+		printf ("Enter Matrix B elements :\n");
 		for (int r = 0; r < row2; r++)
 			for (int c = 0; c < column2; c++)
 				scanf ("%d", &matrixB[r][c]);

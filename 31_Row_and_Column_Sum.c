@@ -9,8 +9,10 @@ int main ()
 	int matrix[100][100], row_sum[100] = {0}, column_sum[100] = {0};
 	int row, column;
 
+	printf ("Enter Row Size and Column Size : ");
 	scanf ("%d %d", &row, &column);
 
+	printf ("Enter Matrix elements :\n");
 	for (int r = 0; r < row; r++)
 		for (int c = 0; c < column; c++)
 		{
@@ -20,6 +22,7 @@ int main ()
 			// column sum
 			column_sum[c] += matrix[r][c];
 		}
+
 	for (int r = 0; r < row; r++)
 		printf ("Row %d sum : %d\n", r + 1, row_sum[r]);
 

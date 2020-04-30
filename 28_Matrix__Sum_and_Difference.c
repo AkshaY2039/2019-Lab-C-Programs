@@ -9,11 +9,14 @@ int main ()
 	int matrixA[100][100], matrixB[100][100];
 	int row, column;
 
+	printf ("Enter Row Size and Column Size : ");
 	scanf ("%d %d", &row, &column);
 
+	printf ("Enter Matrix A elements :\n");
 	for (int r = 0; r < row; r++)
 		for (int c = 0; c < column; c++)
 			scanf ("%d", &matrixA[r][c]);
+	printf ("Enter Matrix B elements :\n");
 	for (int r = 0; r < row; r++)
 		for (int c = 0; c < column; c++)
 			scanf ("%d", &matrixB[r][c]);
@@ -42,7 +45,7 @@ int main ()
 		printf ("\n");
 	}
 
-	printf ("Difference Matric :\n");
+	printf ("Difference Matrix :\n");
 	for (int r = 0; r < row; r++)
 	{
 		for (int c = 0; c < column; c++)

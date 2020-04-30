@@ -9,8 +9,10 @@ int main ()
 	int array[100], index_array[100], freq[100] = {0};
 	int size;
 
+	printf ("Enter the size of Array : ");
 	scanf ("%d", &size);
 
+	printf ("Enter Array Elements : \n");
 	for (int i = 0; i < size; ++i)
 		scanf ("%d", &array[i]);
 
@@ -23,7 +25,7 @@ int main ()
 		{
 			if (array[i] == index_array[j])
 			{
-				flag = 1;
+				flag = 1; // Repeated element
 				freq[j]++;
 			}
 		}

@@ -8,6 +8,7 @@ int main ()
 {
 	char str[100];
 
+	printf ("Enter the string including some digits : ");
 	scanf ("%[^\n]s", str);
 
 	int sum = 0;

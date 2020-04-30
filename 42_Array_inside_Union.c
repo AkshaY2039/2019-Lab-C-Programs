@@ -21,7 +21,7 @@ int main ()
 	scanf ("%c", &test.arr[1]);
 	
 	printf ("Before Swap :\n\tNumber is %d\n\tFirst character is \'%c\'\n\tSecond character is \'%c\'\n", test.num, test.arr[0], test.arr[1]);
-	char temp =test.arr[0];
+	char temp = test.arr[0];
 	test.arr[0] = test.arr[1];
 	test.arr[1] = temp;
 	printf ("After Swap :\n\tNumber is %d\n\tFirst character is \'%c\'\n\tSecond character is \'%c\'\n", test.num, test.arr[0], test.arr[1]);

@@ -8,10 +8,13 @@ int main ()
 {
 	char str[100], *p, old_char, new_char;
 
+	printf ("Enter the String : ");
 	scanf ("%[^\n]s", str);
 	getchar ();
+	printf ("Enter the character to find : ");
 	scanf ("%c", &old_char);
 	getchar ();
+	printf ("Enter the character to replace with : ");
 	scanf ("%c", &new_char);
 
 	p = str;
@@ -24,7 +27,7 @@ int main ()
 		p++;
 	}
 
-	printf ("After replacing \'%c\' with \'%c\' new string is : %s\n", old_char, new_char, str);
+	printf ("After replacing '%c' with '%c' new string is : %s\n", old_char, new_char, str);
 
 	return 0;
 }

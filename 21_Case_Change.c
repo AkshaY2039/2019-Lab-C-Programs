@@ -9,6 +9,7 @@ int main ()
 	char a[100];
 	int difference = (int)('a' - 'A');
 
+	printf ("Enter the string : ");
 	scanf ("%[^\n]s", a);
 
 	for (int i = 0; a[i] != '\0'; ++i)
@@ -20,7 +21,7 @@ int main ()
 				a[i] = (char)(a[i] + difference);
 	}
 
-	printf ("%s\n", a);
+	printf ("Case Changed string is : %s\n", a);
 
 	return 0;
 }

@@ -10,7 +10,7 @@ int main ()
 	int triangle_height;
 	int pascal[21][21];
 
-	printf ("Enter Triangle Height (<= 20) : ");
+	printf ("Enter Height of Pascal Triangle to generate (<= 20) : ");
 	scanf ("%d", &triangle_height);
 
 	if (triangle_height > MAX_HEIGHT)

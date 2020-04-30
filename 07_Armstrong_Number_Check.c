@@ -8,6 +8,7 @@ int main ()
 {
 	int number;
 
+	printf ("Enter the Number to check (if Armstrong or not) : ");
 	scanf ("%d", &number);
 
 	int temp = number;

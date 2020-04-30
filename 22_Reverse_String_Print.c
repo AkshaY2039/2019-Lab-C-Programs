@@ -9,10 +9,12 @@ int main ()
 	int len;
 	char str[100];
 
+	printf ("Enter the string : ");
 	scanf ("%[^\n]s", str);
 
 	for (len = 0; str[len] != '\0'; len++);
 
+	printf ("Reversed string : ");
 	for (int i = len - 1; i >= 0; i--)
 		printf ("%c", str[i]);
 	printf ("\n");

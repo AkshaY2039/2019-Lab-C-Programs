@@ -8,6 +8,7 @@ int main ()
 {
 	int number1, number2;
 
+	printf ("Enter 2 Integers : ");
 	scanf ("%d %d", &number1, &number2);
 
 	printf ("Before Swap :\n");

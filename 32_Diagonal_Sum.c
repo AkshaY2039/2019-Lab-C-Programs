@@ -10,10 +10,12 @@ int main ()
 	long main_diag_sum = 0, opp_diag_sum = 0;
 	int row, column;
 
+	printf ("Enter Row Size and Column Size : ");
 	scanf ("%d %d", &row, &column);
 
 	if (row == column)
 	{
+		printf ("Enter Matrix elements : ");
 		for (int r = 0; r < row; r++)
 			for (int c = 0; c < column; c++)
 			{

@@ -7,7 +7,10 @@
 int main ()
 {
 	int number;
+
+	printf ("Enter an Integer : ");
 	scanf ("%d", &number);
+
 	printf ("%d*7 = %d\n", number, (number << 3) - number);
 
 	return 0;

@@ -9,6 +9,7 @@ int main ()
 	char str[100], *p;
 	long sum = 0;
 
+	printf ("Enter the String : ");
 	scanf ("%[^\n]s", str);
 
 	p = str;

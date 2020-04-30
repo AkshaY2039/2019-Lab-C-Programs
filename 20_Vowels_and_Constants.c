@@ -4,14 +4,20 @@
 */
 #include <stdio.h>
 
-char vowels_array[] = "AEIOUaeiou";
-
 int isvowel (char c)
 {
-	for (int i = 0; vowels_array[i] != '\0'; ++i)
+	switch (c)
 	{
-		if (vowels_array[i] == c)
-			return 1;
+		case 'A': return 1;
+		case 'E': return 1;
+		case 'I': return 1;
+		case 'O': return 1;
+		case 'U': return 1;
+		case 'a': return 1;
+		case 'e': return 1;
+		case 'i': return 1;
+		case 'o': return 1;
+		case 'u': return 1;
 	}
 
 	return 0;
@@ -30,6 +36,7 @@ int main ()
 	int vowels = 0, consonants = 0;
 	char a[100];
 
+	printf ("Enter the string : ");
 	scanf ("%[^\n]s", a);
 
 	for (int i = 0; a[i] != '\0'; ++i)

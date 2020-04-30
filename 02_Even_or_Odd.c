@@ -8,6 +8,7 @@ int main ()
 {
 	int number;
 
+	printf ("Enter an Integer : ");
 	scanf ("%d", &number);
 
 	if (number % 2)

@@ -9,6 +9,7 @@ int main ()
 	char str[100];
 	int difference = (int)('a' - 'A'), freq[128] = {0};
 
+	printf ("Enter the string : ");
 	scanf ("%[^\n]s", str);
 
 	for (int i = 0; str[i] != '\0'; i++)
@@ -19,6 +20,7 @@ int main ()
 			freq[(int)(str[i])]++;
 	}
 
+	printf ("Occurences of Characters : \n");
 	for (int i = 0; i < 128; i++)
 	{
 		if (freq[i])
